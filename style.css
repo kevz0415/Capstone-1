@@ -4,23 +4,22 @@ html {
 
 body {
 	padding-top: 2rem;
-	background-color: #292941;
-	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #eeeee4;
+	font-family: 'Nanum Myeongjo', serif;
 }
 
 
 #home {
-	background-image: url(images./genericBG.jpg);
+	background-image: url(images./bnw.jfif);
 	background-repeat: no-repeat;
-  	background-attachment: fixed;
+  	background-attachment: absolute;
   	background-size: cover;
   	
 }
-}
 
-nav > h2 {
-	font-family: 'Roboto', sans-serif;
 
+.navbar > div > h1 {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-link {
@@ -38,10 +37,6 @@ nav > h2 {
 	font-size: 3rem;
 }
 
-.main-home .quotee {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
 
 .main-home {
 	margin-top: 5rem;
@@ -49,13 +44,39 @@ nav > h2 {
 	padding: 3rem;
 }
 
+.myimg {
+	height: 300px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	width: 300px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	transform: rotate(-15deg);
+}
 
-#aboutme > h1 {
-	font-family: monospace;	
+#aboutme-lander, #home-lander, #projects-lander, #toolSet-lander, #contactme-lander {
+	position: relative;
+	top: -50px;
+}
+
+
+#aboutme > div > h1 , 
+#projects > div > div > div > div > h1 {
+	display: inline;	
 	margin top: 5rem;
 	margin-bottom: 5rem;
 	padding-top: 5rem;
+	font-size: 4rem;
+	border-bottom: 3px solid #eab676;
+}
 
+#aboutme > div > h4 , 
+#projects > div > div > div > div > h4{	
+	margin top: 1rem;
+	margin-bottom: 5rem;
+	padding-top: 1rem;
+	text-align: center;	
 }
 .my-picture{
 	display: flex;
@@ -69,13 +90,14 @@ nav > h2 {
 	height: 300px;
 }
 
+
 .modal-header, .modal-footer {
-	background-color: #f16252
+	background-color: #eab676;
 
 }
 
 .modal-backdrop {
-	background-color: rgba(1, 1, 1, 1);
+	background-color: rgba(0, 0, 0, 0.5);
 	
 
 }
@@ -85,3 +107,143 @@ nav > h2 {
 	padding: 2rem;
 }
 
+.profile-area {
+	padding: 10px;
+}
+
+.card {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 15px;
+	width: 24rem;
+}
+
+.img1 img{
+	height: 300px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	width: 100%;
+}
+
+.img2 img{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 7px solid white;
+	margin-top: -200px;
+}
+
+.card:hover .img2 img {
+	border-color: orange;
+	transition: 1s;
+}
+
+.main-text {
+	padding: 30px 0;
+	text-align: center;t
+}
+
+.main-text h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 20px;
+	margin: 0 0 20px;
+}
+
+.main-text p {
+	font-size: 16px;
+	padding: 0 35px;
+}
+
+.main {
+	margin-top: 10%;
+}
+
+.main h3 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 25%;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.main > .container {
+	width: 50%;
+	height: 50%;
+	background-color: #2c2c44;
+	margin-left: 25%;
+	border-radius: 15px;
+
+}
+
+
+.ui-widget {
+	position: relative;
+	display: inline-block;
+	width: 10rem;
+	height: 10rem;
+	margin: 1.5rem;
+	border: 1.2rem solid #ffc001;
+	top: 25%;
+	text-align: center;
+	border-radius: 9rem;
+	box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
+	border-bottom-color: #fff;
+	border-top-color: #E96D34;
+	border-right-color: #f25b52;
+	box-sizing: border-box;
+
+}
+
+.ui-widget:nth-child(2) {
+	border-left-color: #ffc001;
+	border-top-color: #E96D34;
+	border-right-color: #fff;
+	border-bottom-color:  #fff;
+}
+
+.ui-widget:nth-child(3) {
+	border-left-color: #ffc001;
+	border-top-color: #E96D34;
+	border-right-color: #fff;
+	border-bottom-color:  #fff;
+}
+
+.ui-widget .ui-value {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30px;
+	font-size: 2.3rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.ui-widget .ui-label {
+	position: absolute;
+	left: 0;
+	bottom: -45px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	width: 100%;
+}
+
+#contactme > div > h1 {
+	display: inline;	
+	margin: 5rem;
+	padding-top: 5rem;
+	font-size: 4rem;
+	border-bottom: 3px solid #eab676;
+}
+
+#linkedfb > a {
+	margin: 0.5rem;
+	color: #2c2c44;
+}
